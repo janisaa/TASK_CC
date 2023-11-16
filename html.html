@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <nav>
+        <a href="#tasks">Tasks</a>
+        <a href="#add-task">Add Task</a>
+    </nav>
+    <div class="container" id="tasks">
+        <h2>Task List</h2>
+        <ul id="task-list"></ul>
+    </div>
+    <div class="container" id="add-task" style="display: none;">
+        <h2>Add Task</h2>
+        <form id="task-form">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" required>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" required>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
